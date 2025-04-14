@@ -1,0 +1,34 @@
+`    # Git history
+    .git
+    .gitignore
+    
+    # Docker config (not part of build context content)
+    Dockerfile
+    docker-compose.yml
+    .dockerignore
+    
+    # Gradle cache & build output (generated during build)
+    .gradle
+    build
+    
+    # IDE directories
+    .idea
+    .vscode
+    out
+    
+    # Node modules (if any)
+    node_modules
+    
+    # OS generated files
+    .DS_Store
+    Thumbs.db
+    
+    # Logs
+    *.log
+    logs/
+    
+    # Local Config & Secrets (CRITICAL: prevent inclusion in image)
+    .env
+    secrets.*
+    application-local.*
+    local.*`

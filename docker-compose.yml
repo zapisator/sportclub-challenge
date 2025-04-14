@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    build: . # Build from Dockerfile in current directory
+    container_name: sportclub-challenge-app
+    restart: unless-stopped
+    ports:
+      - "8080:8080" # Map host port to container port
+
+    # Environment variables are automatically sourced from the .env file
+    # You can override specific variables here if needed (e.g., for non-secret config)
+    environment:
+      # APP_JWT_SECRET: Sourced from .env file (DO NOT DEFINE HERE)
+      - APP_JWT_EXPIRATION_MS=86400000 # Example override for expiration
+      # - SPRING_PROFILES_ACTIVE=docker # Optional: activate specific profile
+      - JAVA_OPTS=-XX:+UseZGC -Xms256m -Xmx512m -Djava.security.egd=file:/dev/./urandom

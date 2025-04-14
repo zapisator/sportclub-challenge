@@ -1,21 +1,15 @@
-# === Gradle ===
+# Gradle
 .gradle/
 build/
-# Wrapper jar should not be ignored
 !gradle/wrapper/gradle-wrapper.jar
 
-# === IntelliJ IDEA ===
+# IDEs
 .idea/
-
-# IntelliJ files
-*.iws
+.vscode/
 *.iml
 *.ipr
-
-# Standard IntelliJ compilation dir
+*.iws
 out/
-
-# === Eclipse/STS ===
 .classpath
 .project
 .settings/
@@ -23,34 +17,27 @@ out/
 bin/
 .apt_generated
 .sts4-cache
-
-# === NetBeans ===
 nbproject/private/
-build/
 nbbuild/
 dist/
 nbdist/
 .nb-gradle/
 
-# === VS Code ===
-.vscode/
-
-# === Mac OS / Windows ===
+# OS Artifacts
 .DS_Store
 Thumbs.db
 
-# === Local configuration ===
-application-local.yml
-application-local.properties
-local.properties
-secrets.properties
-secrets.yml
+# Local Configuration & Secrets (DO NOT COMMIT!)
+.env
+application-local.*
+local.*
+secrets.*
 
-# === Logs ===
+# Logs
 *.log
 logs/
 
-# === Build artifacts ===
+# Build Artifacts (Should not be in Git)
 *.jar
 *.war
 *.ear
@@ -58,7 +45,5 @@ logs/
 *.tar.gz
 *.rar
 
-# === Specific for Spring Initializr ===
+# Misc
 HELP.md
-
-# === Other ===
