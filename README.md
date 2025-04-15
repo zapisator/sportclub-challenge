@@ -17,6 +17,7 @@ It focuses on:
 *   Spring Batch
 *   Spring Security (with JWT for authentication)
 *   Spring Web
+*   Spring Caching
 *   H2 Database (x2 - Source & Target)
 *   Lombok
 *   MapStruct
